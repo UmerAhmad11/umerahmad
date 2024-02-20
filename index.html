@@ -10,26 +10,47 @@
                 background-image: linear-gradient(to right, #A2EFE3, #73D8FB);
             }
 
-            img {
+            .image {
                 width: 500px;
                 height: 500px;
                 border-radius: 200px;
                 border: 10px solid maroon;
                 border-style: double;
-                float: top;
-                margin-top: 50px;
+                margin-top: 45px;
                 margin-left: 30px;
                 position: relative;
             }
 
-            img:hover{
+            .umer {
+                width: 500px;
+                height: 500px;
+                border-radius: 200px;
+                position: relative;
+
+            }
+
+            .tex{
+                width: 500px;
+                height: 500px;
+                border-radius: 200px;
+                margin-top: 0px;
+                margin-left: -500px;
+                position: absolute;
+                opacity: 0;
+            }
+
+            .tex:hover{
+                transition: 200ms ease-in-out;
+                opacity: 1;
+            }
+
+            .image:hover{
                 width: 500px;
                 height: 500px;
                 border-radius: 210px;
                 border: 10px solid maroon;
                 border-style:dashed;
-                float: top;
-                margin-top: 50px;
+                margin-top: 45px;
                 margin-left: 30px;
                 position: relative;
             }
@@ -58,24 +79,103 @@
 
             .bio{
                 font-size: 15px;
+                padding-left: 20px;
+                padding-top: 10px;
                 margin-left: 800px;
-                margin-top: -400px;
+                margin-top: -450px;
                 text-align: left;
                 position: absolute;
                 font-family: monospace;
             }
 
             .bio:hover{
-                background-size: 50px 50px;
-                background-color: rgb(235, 215, 225);
+                background-size: 300px;
+                padding-left: 20px;
+                padding-top: 10px;
+                width: 600px;
+                height: 100px;
+                background-image: linear-gradient(to bottom,#800000, #ae5454ee);
                 border-radius: 10px;
+                color: white;
+                position: absolute;
 
             }
+
+            .button1 {
+                border: none;
+                color: white;
+                padding: 10px 35px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                cursor: pointer;
+                margin-left: 700px;
+                margin-top: -550px;
+                position: absolute;
+            }
+            .button2 {
+                border: none;
+                color: white;
+                padding: 10px 35px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                cursor: pointer;
+                margin-left: 880px;
+                margin-top: -550px;
+                position: absolute;
+            }
+            .button3 {
+                border: none;
+                color: white;
+                padding: 10px 35px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                cursor: pointer;
+                margin-left: 1090px;
+                margin-top: -550px;
+                position: absolute;
+            }
+            .button4 {
+                border: none;
+                color: white;
+                padding: 10px 35px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                cursor: pointer;
+                margin-left: 1270px;
+                margin-top: -550px;
+                position: absolute;
+            }
+
+            .button:hover{
+                background-image: linear-gradient(to right, #800000, #ae5454ee);
+            }
+
+            .button1 {background-color: maroon;} /* Green */
+            .button2 {background-color: maroon;} /* Blue */
+            .button3 {background-color: maroon;} /* Blue */
+            .button4 {background-color: maroon;} /* Blue */
+
+
 
         </style>
     </head>
     <body>
-        <img src="umer.jpeg">
+        <div class="image">
+            <img class="umer" src="umer.jpeg">
+            <img class="tex" src="texas.jpeg">
+        </div>
+        <button class="button button1">ML Projects</button>
+        <button class="button button2">Python Projects</button> 
+        <button class="button button3">Experience</button>  
+        <button class="button button4">Academia</button>                            
         <p class="Name">Syed Umer Ahmad</p>
         <p class="University">Electrical and Computer Engineering <br />at <br /> A&M University at Qatar</p>
         <p class="bio">Howdy! I am an Electrical and Computer Engineering Undergraduate,<br /> currently studying at Texas A&M University at Qatar.<br /> I have made this website to showcase my projects to the world!</p>       
